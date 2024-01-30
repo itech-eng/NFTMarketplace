@@ -1,0 +1,8 @@
+query ItemDetailsForHighestBid($slugOrTokenId: String!) {
+  ItemDetailsBySlugOrTokenId(slugOrTokenId: $slugOrTokenId) {
+    highest_bid {
+      fee_amount
+      total_amount
+    }
+  }
+}

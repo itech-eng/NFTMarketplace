@@ -1,0 +1,57 @@
+.TopSectionWrapper {
+  padding: 1rem 0;
+  background: var(--background-color-4);
+  /* border-bottom: 1px solid var(--border-1); */
+}
+
+.topSection {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.topSection a,
+.topSection button {
+  min-width: 7.5rem;
+  font-size: 1.6rem;
+  padding: 0.75rem 1.25rem;
+  border: 1px solid;
+  color: var(--text-color-5);
+  text-align: center;
+  font-weight: 500;
+  border-radius: 1rem;
+}
+
+.topSection a:last-child,
+.topSection button:last-child {
+  border-color: transparent;
+}
+
+.topSection a {
+  box-shadow: none;
+  transition: all 0.4s;
+}
+
+.topSection a:hover {
+  box-shadow: 6px 6px 35px rgb(166 166 166 / 25%);
+}
+.topSection button {
+  box-shadow: none;
+  transition: all 0.4s;
+  background-color: transparent;
+}
+
+.topSection button:hover {
+  box-shadow: 6px 6px 35px rgb(166 166 166 / 25%);
+}
+
+.btnFilled {
+  background: var(--primary-color) !important;
+  color: var(--text-color-3) !important;
+  cursor: pointer;
+}
+
+.cancelBtn {
+  border: 1px solid var(--primary-color) !important;
+}

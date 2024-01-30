@@ -1,0 +1,7 @@
+mutation finishExchang($exchangeId: Int!,$transactionHash: String!){
+  finishExchang(exchangeId: $exchangeId, transactionHash: $transactionHash){
+    success
+    code
+    message
+  }
+}

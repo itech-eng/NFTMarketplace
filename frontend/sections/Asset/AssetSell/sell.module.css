@@ -1,0 +1,115 @@
+.wrapper {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+  color: var(--text-color-6);
+}
+
+.listItem h4 {
+  font-size: 3.75rem;
+  margin-bottom: 3.5rem;
+}
+
+.typeName {
+  font-weight: 500;
+  font-size: 1.8rem;
+}
+
+.titleWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.titleWrapper p {
+  margin-bottom: 1rem !important;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.deactive {
+  background: var(--background-color-5);
+}
+
+.deactive:hover {
+  transition: all 0.2s ease 0s;
+  box-shadow: rgb(4 17 29 / 25%) 0px 0px 8px 0px;
+}
+
+.active {
+  background: var(--background-color-3);
+}
+
+.deactive .typeName {
+  color: var(--text-color-6);
+}
+
+.active .typeName {
+  color: var(--text-color-4);
+}
+
+.typeOptions {
+  display: flex;
+}
+
+.typeOptions button {
+  height: 12.5rem;
+  padding: 2rem;
+  text-align: center;
+  flex: 1;
+  border: 1px solid var(--border-3) !important;
+  width: 20rem;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.fixedPrice {
+  border-top-left-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
+}
+
+.timedAuction {
+  border-top-right-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+}
+
+.wrapper p {
+  margin-bottom: 0.5rem;
+}
+
+.SubmitBtn {
+  background-color: var(--p3);
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 0.8rem;
+  margin-top: 4rem;
+  opacity: 0.4;
+}
+
+@media (max-width: 76rem) {
+  .wrapper {
+    display: block;
+  }
+
+  .previewWrapper {
+    display: none;
+  }
+
+  .listItem h4 {
+    font-size: 3.2rem;
+  }
+}
+
+/* Chrome, Safari, Edge, Opera */
+.wrapper input::-webkit-outer-spin-button,
+.wrapper input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.wrapper input[type="number"] {
+  -moz-appearance: textfield;
+}

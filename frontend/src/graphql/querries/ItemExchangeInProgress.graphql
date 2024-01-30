@@ -1,0 +1,7 @@
+query ItemExchangeInProgress($slugOrTokenId: String!) {
+  ItemDetailsBySlugOrTokenId(slugOrTokenId: $slugOrTokenId) {
+    exchange_in_progress {
+      id
+    }
+  }
+}

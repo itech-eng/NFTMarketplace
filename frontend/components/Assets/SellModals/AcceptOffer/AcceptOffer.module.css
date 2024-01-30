@@ -1,0 +1,93 @@
+.info {
+  padding: 2rem 0;
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: center;
+
+  border-top: 1px solid var(--border-4);
+  border-bottom: 1px solid var(--border-4);
+}
+
+.infoBoxContainer {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.itemImage {
+  width: 10rem;
+  height: 7rem !important;
+  object-fit: contain;
+  border: 1px solid var(--border-4);
+  border-radius: 1.5rem;
+}
+
+.infoBox {
+  display: flex;
+  gap: 0.25rem;
+  flex-direction: column;
+  font-weight: 500;
+}
+
+.label {
+  font-size: 1.3rem;
+  color: var(--text-color-7);
+  line-height: 1.4;
+}
+
+.labelBold {
+  font-size: 1.6rem;
+  color: var(--text-color-6);
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.total {
+  margin: 2rem 0;
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.totalAmount {
+  color: var(--p1);
+}
+
+.fees {
+  padding: 0.25rem 0;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  /* border-bottom: 1px solid var(--border-4); */
+}
+
+.fees > p {
+  flex: 1;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--text-color-7);
+  margin-bottom: 0;
+}
+
+.fees > span {
+  flex: auto;
+  border-bottom: 1px solid var(--border-4);
+}
+
+.feePercent {
+  text-align: right;
+}
+
+@media (max-width: 500px) {
+  .infoBoxContainer {
+    flex-direction: column;
+  }
+
+  .total {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}

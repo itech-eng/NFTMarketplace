@@ -1,0 +1,170 @@
+.profileImage {
+  max-width: 2.75rem !important;
+  width: 2.75rem !important;
+  height: 2.75rem !important;
+  border: 2px solid var(--border-4);
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.panelButton,
+.link {
+  cursor: pointer;
+  font-size: 2.4rem;
+  color: var(--text-color-4) !important;
+  background: transparent;
+  border: 0;
+  transition: all 0.4s ease-in;
+}
+.panelButton:hover,
+.link:hover {
+  color: var(--primary-color) !important;
+}
+
+.nightButtonText {
+  color: var(--text-color-4) !important;
+  transition: all 0.4s ease-in;
+}
+.nightButtonText:hover {
+  color: var(--primary-color) !important;
+}
+
+.panelBody {
+  inset: 115% -4px 0 auto !important;
+  transform: translate(0px) !important;
+  z-index: 10;
+}
+
+.searchForm {
+  width: 810px;
+  padding: 12px 24px;
+  display: flex;
+  justify-content: space-between;
+  background: var(--primary-color);
+  border-radius: 4px;
+
+  animation-duration: 1s;
+  animation-name: slide;
+}
+
+.searchForm > * {
+  color: #fff;
+  border: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 12px 8px;
+  background: transparent;
+}
+
+.searchForm input {
+  width: 100%;
+}
+
+.searchForm input::placeholder {
+  color: rgba(255, 255, 255, 0.85);
+  letter-spacing: 2px;
+}
+
+.slideMenu {
+  position: fixed;
+  top: 0;
+  right: 0;
+
+  width: 100%;
+  min-height: 100vh;
+  background: var(--blue-2);
+
+  display: flex;
+  flex-direction: column;
+
+  transform: translateX(105%);
+  transition: all 0.75s ease-in;
+}
+.slideShow {
+  transform: translateX(0%);
+  transition: all 0.5s ease-in;
+}
+
+.slideMenuHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  padding-top: 3rem;
+}
+
+.slideMenuHeader button {
+  background: transparent;
+  border: 0;
+  color: var(--text-color-3);
+  font-size: 2.5rem;
+}
+
+.subMenuUl {
+  min-width: 30rem !important;
+}
+
+.nightButton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--text-color-3);
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.nightButton:hover {
+  padding-left: 0.25rem;
+  color: var(--primary-color);
+}
+
+.switch {
+  margin-right: 1.5rem;
+}
+
+.language {
+  font-size: 1.6rem;
+  color: var(--text-color-4);
+}
+
+@keyframes slide {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1200px) {
+  .language {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .searchForm {
+    width: 600px;
+  }
+}
+
+@media (max-width: 575px) {
+  .searchForm {
+    width: 450px;
+  }
+}
+
+@media (max-width: 480px) {
+  .searchForm {
+    width: 350px;
+  }
+}
+
+@media (max-width: 375px) {
+  .searchForm {
+    width: 300px;
+  }
+}

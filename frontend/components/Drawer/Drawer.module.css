@@ -1,0 +1,86 @@
+.dialog {
+  position: fixed;
+  inset: 0;
+  overflow-y: auto;
+  z-index: 99;
+}
+
+.wrapper {
+  height: 100vh;
+  overflow: hidden;
+  float: left;
+}
+
+.wrapper img {
+  filter: var(--logo-filter);
+}
+
+.wrapperRight {
+  float: right;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.container {
+  position: relative;
+  background: var(--background-color);
+  width: 300px;
+  height: 100%;
+  overflow: auto;
+}
+
+.title {
+  padding: 2rem;
+  color: var(--text-color);
+  text-transform: capitalize;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--border-4);
+}
+
+.closeBtn {
+  background: transparent;
+  border: 0;
+  color: var(--text-color-black);
+  font-size: 2.5rem;
+}
+
+.leftSide {
+  animation: slideLeft 0.3s ease-in-out;
+}
+
+.rightSide {
+  animation: slideRight 0.3s ease-in-out;
+}
+
+@keyframes slideLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-105%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    opacity: 0;
+    transform: translateX(0%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}

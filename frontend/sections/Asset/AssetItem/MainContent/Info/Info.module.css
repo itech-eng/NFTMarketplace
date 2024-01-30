@@ -1,0 +1,124 @@
+.header {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-flow: row wrap;
+  margin-bottom: 3rem;
+}
+
+.itemName {
+  color: var(--text-color);
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+
+.ownerName {
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.ownerStats {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.countFavBox {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.unlockable {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-top: 2rem;
+  padding: 1.25rem 2rem;
+  font-size: 1.7rem;
+  font-weight: 500;
+  color: var(--p2);
+  background: transparent;
+  border: 1px solid var(--border-4);
+  border-radius: 1.5rem;
+}
+
+.unlockableContent {
+  min-height: 10rem;
+  padding: 2rem 0;
+  border-top: 1px solid var(--border-4);
+  border-bottom: 1px solid var(--border-4);
+}
+
+/* sharing */
+.buttons {
+  position: relative;
+}
+
+.button {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  /* position: relative; */
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: 5rem;
+  right: 50%;
+  transform: translateX(50%);
+  width: max-content;
+  padding: 0.5rem 0;
+  background: var(--background-color);
+  border: 1px solid var(--border-3);
+  border-radius: 1.5rem;
+}
+
+.dropdownItem {
+  color: var(--text-color-7);
+  background: transparent;
+  font-size: 1.5rem;
+  width: 100%;
+  padding: 0.25rem 1rem;
+  border: 0;
+  border-radius: 1.5rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.dropdownItem:hover {
+  color: var(--text-color);
+}
+
+.dropdownItem svg {
+  margin-right: 0.75rem;
+  font-size: 2rem;
+}
+
+.lastChild {
+  border-radius: 0 1.5rem 1.5rem 0;
+}
+
+@media (max-width: 575px) {
+  .dropdownMenu {
+    transform: translateX(38%);
+  }
+
+  .ownerName {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .ownerStats {
+    font-size: 1.5rem;
+  }
+}

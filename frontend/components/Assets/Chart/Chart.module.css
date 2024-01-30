@@ -1,0 +1,49 @@
+.info {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.select {
+  width: 25rem;
+}
+
+.stats {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.statCard {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.6rem;
+}
+
+.statsAmount {
+  font-weight: 500;
+  color: var(--primary-color);
+}
+
+@media (max-width: 1100px) {
+  .info {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .info {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 600px) {
+  .info {
+    flex-direction: column;
+  }
+
+  .select {
+    width: 100%;
+  }
+}

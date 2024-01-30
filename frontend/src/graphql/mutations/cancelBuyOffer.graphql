@@ -1,0 +1,7 @@
+mutation cancelBuyOffer($sell_uid: String!) {
+  cancelBuyOffer(sell_uid: $sell_uid) {
+    code
+    message
+    success
+  }
+}

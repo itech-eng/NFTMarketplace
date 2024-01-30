@@ -1,0 +1,56 @@
+query getSellOfferListsByUser(
+  $after: String
+  $before: String
+  $first: Int
+  $last: Int
+  $skip: Int
+  $status: Int!
+  $user_id: Int
+  $user_wallet_address: String
+) {
+  getSellOfferListsByUser(
+    after: $after
+    before: $before
+    first: $first
+    last: $last
+    skip: $skip
+    status: $status
+    user_id: $user_id
+    user_wallet_address: $user_wallet_address
+  ) {
+    totalCount
+    pageInfo {
+      endCursor
+      startCursor
+      hasNextPage
+      hasPreviousPage
+    }
+    edges {
+      node {
+        id
+        total_amount
+        created_at
+        end_date
+        item {
+          name
+          thumbnail_path
+          slug
+          collection {
+            name
+            slug
+          }
+        }
+        user {
+          username
+        }
+        payment_token {
+          id
+          name
+          contract_address
+          token_symbol
+          logo
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,70 @@
+.disclosure {
+  margin-bottom: 2rem;
+  border: 1px solid var(--border-4);
+  border-radius: 1rem;
+}
+.panelButton {
+  width: 100%;
+  padding: 2.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 0;
+  background: transparent;
+  font-weight: 500;
+  color: var(--text-color);
+  text-transform: capitalize;
+}
+.bottomPanelButton span {
+  width: 30rem;
+  border: 1px solid;
+  color: var(--primary-color);
+  text-align: center;
+  font-weight: 500;
+  padding: 1.25rem 1rem;
+  border-radius: 1rem;
+  box-shadow: none;
+  transition: all 0.4s;
+}
+.bottomPanelButton {
+  width: 100%;
+  padding: 2.5rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  background: transparent;
+  font-weight: 500;
+  color: var(--text-color);
+  text-transform: capitalize;
+}
+.panelBody {
+  overflow: auto;
+  padding: 2rem;
+  background: var(--primary-light);
+  font-size: 1.5rem;
+  border-top: 1px solid var(--border-4);
+}
+
+.collectionWrapper {
+  display: inline-flex;
+  gap: 2.5rem;
+}
+
+.collectionWrapper article {
+  /* margin-right: 2.5rem; */
+  width: 25rem;
+}
+
+@media (max-width: 600px) {
+  .panelButton {
+    padding: 1rem 2rem;
+  }
+  .bottomPanelButton {
+    padding: 1rem 2rem;
+  }
+
+  .collectionWrapper article {
+    width: 25rem;
+  }
+}

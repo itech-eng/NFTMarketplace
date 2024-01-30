@@ -1,0 +1,50 @@
+.wrapper p {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.bundleToggle {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0;
+}
+
+.reserveToggle {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0;
+}
+
+.fees {
+  margin-top: 2rem;
+  border-top: 1px solid rgb(225, 231, 236);
+  padding-top: 2rem;
+}
+
+.feesLevel {
+  display: flex;
+  justify-content: space-between;
+}
+
+.feesValue {
+  display: flex;
+  justify-content: space-between;
+}
+
+.inputWrapper div {
+  border: 1px solid rgb(223, 230, 236);
+}
+
+.inputWrapper div:hover {
+  box-shadow: 0.2rem 0.2rem 0.2rem 0.2rem #ebe5e5;
+}
+
+.bundleDescription div {
+  height: 7rem;
+}
+
+.optionBtn {
+  color: var(--primary-color);
+  font-size: 1.6rem;
+  cursor: pointer;
+  font-weight: 500;
+}

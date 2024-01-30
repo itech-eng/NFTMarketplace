@@ -1,0 +1,57 @@
+.imgWrapper {
+  margin: 0 auto;
+  height: 22.5rem;
+  width: 22.5rem;
+  margin-bottom: 4rem;
+  margin-top: 0.8rem;
+  padding: 1.2rem;
+  border: 1px solid var(--border-1);
+  box-shadow: 5px 5px 30px rgb(0 3 59 / 35%);
+  border-radius: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imgWrapper img {
+  object-fit: contain;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 1.5rem;
+}
+
+.form {
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+.form small {
+  font-size: 1.3rem;
+  margin-left: 2rem;
+  position: relative;
+  top: -2rem;
+}
+
+.form p {
+  font-size: 1.8rem;
+  color: var(--text-color-7);
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.addressText {
+  margin-top: 3rem;
+  word-break: break-word;
+}
+
+.errorSection {
+  padding: 0 1.5rem;
+  margin-top: -2rem;
+}
+
+.alertMessage {
+  font-size: 1.5rem;
+}

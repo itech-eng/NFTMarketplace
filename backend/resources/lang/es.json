@@ -1,0 +1,6 @@
+{
+  "Invalid blockchain provider.":"Proveedor de cadena de bloques no válido.",
+  "The provider does't support NFT list fetching.":"El proveedor no admite la obtención de listas NFT",
+  "Invalid file type. Valid types are: ":"Tipo de archivo no válido. Los tipos válidos son: ",
+  "Unable to resize non image file":"No se puede cambiar el tamaño del archivo que no es de imagen"
+}

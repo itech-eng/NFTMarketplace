@@ -1,0 +1,18 @@
+.wrapper {
+  text-align: center;
+}
+
+.title {
+  font-size: 8rem;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+
+.zero {
+  color: var(--primary-color);
+}
+
+.wrapper p{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}

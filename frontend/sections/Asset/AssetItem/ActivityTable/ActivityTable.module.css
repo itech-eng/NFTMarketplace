@@ -1,0 +1,67 @@
+.disclosure {
+  margin-bottom: 2rem;
+  border: 1px solid var(--border-4);
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.tokenLogo {
+  /* margin-right: 5px !important; */
+}
+.panelButton {
+  width: 100%;
+  padding: 2.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 0;
+  background: transparent;
+  font-weight: 500;
+  color: var(--text-color);
+  text-transform: capitalize;
+}
+
+.panelBody {
+  padding: 2rem;
+  background: var(--primary-light);
+  font-size: 1.5rem;
+  border-top: 1px solid var(--border-4);
+}
+
+.tableContainer {
+  max-height: 25rem;
+}
+
+.acitvityTable td {
+  padding: 0.75rem 0.5rem;
+  border-top: 1px solid var(--border-3);
+}
+
+/* .event {
+  height: 6rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+} */
+
+.event > * {
+  line-height: 1;
+}
+
+.remintButton {
+  font-size: 1.4rem;
+  padding: 0.5rem 1rem;
+  color: var(--text-color-3);
+  background-color: var(--p1);
+  border: 0;
+  border-radius: 1rem;
+}
+
+@media (max-width: 600px) {
+  .panelButton {
+    padding: 1rem 2rem;
+  }
+
+  .tableContainer table {
+    font-size: 1.4rem;
+  }
+}

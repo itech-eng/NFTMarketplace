@@ -1,0 +1,56 @@
+.topSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.topSection a {
+  width: 15rem;
+  border: 1px solid;
+  color: var(--primary-color);
+  text-align: center;
+  font-weight: 500;
+  padding: 1.25rem 1rem;
+  border-radius: 1rem;
+  box-shadow: none;
+  transition: all 0.4s;
+}
+.btnsolid {
+  background: var(--primary-color);
+  color: var(--text-color-3) !important;
+}
+.topSection button {
+  width: 15rem;
+  text-align: center;
+  font-weight: 500;
+  padding: 1.25rem 1rem;
+  border-radius: 1.5rem;
+  box-shadow: none;
+  transition: all 0.4s;
+}
+
+.topSection button:hover {
+  box-shadow: 6px 6px 35px rgb(166 166 166 / 25%);
+}
+
+.topSection a:hover {
+  box-shadow: 6px 6px 35px rgb(166 166 166 / 25%);
+}
+
+.btnCancel {
+  background: var(--background-color);
+  border: 1px solid var(--border-3);
+}
+
+.btnFilled {
+  background: var(--primary-color);
+  color: var(--text-color-3);
+  border: 1px solid var(--primary-color);
+}
+
+.btnFilled:disabled {
+  cursor: not-allowed;
+  background: var(--background-color);
+  border: 1px solid var(--border-3);
+}

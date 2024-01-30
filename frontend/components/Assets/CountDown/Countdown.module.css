@@ -1,0 +1,24 @@
+.countdown {
+  margin-top: 2rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.countdownSection {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.countdownSectionValue {
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--text-color-6);
+  transform: scaleY(1.1);
+}
+
+.countdownSectionLabel {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--text-color-7);
+}

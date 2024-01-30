@@ -1,0 +1,14 @@
+.priceInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.loaderButton:disabled {
+  width: 15rem;
+  height: 5rem;
+  cursor: not-allowed;
+  background: var(--background-color-4);
+  border: 1px solid var(--border-3);
+  border-radius: 1.5rem;
+}

@@ -1,0 +1,52 @@
+.wrapper {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.minAucAlert {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--text-color-4);
+  background: var(--primary-light);
+  padding: 0.5rem 1.5rem;
+  margin-top: 2rem;
+  border: 1px solid var(--primary-2);
+  border-radius: 1.5rem;
+}
+
+.methodWrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.8rem;
+}
+
+.optionText {
+  font-size: 1.5rem;
+  margin-left: 0.8rem;
+}
+
+.select {
+  font-size: 1.5rem;
+}
+
+.reserveToggle {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ToggolerAndTooltipWrapper {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+.optionBtn {
+  margin-top: 1.5rem;
+  border: 0;
+  background: transparent;
+  color: var(--primary-color);
+  font-size: 1.6rem;
+  cursor: pointer;
+  font-weight: 500;
+}

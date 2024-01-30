@@ -1,0 +1,33 @@
+query ItemDetailsForTransfer($slugOrTokenId: String!) {
+  ItemDetailsBySlugOrTokenId(slugOrTokenId: $slugOrTokenId) {
+    id
+    name
+    slug
+    media_path
+    thumbnail_path
+    token_id
+    is_minted
+    owner {
+      id
+      wallet_address
+    }
+    collection {
+      id
+      blockchain {
+        id
+        chain_id
+        status
+        nft_contract
+        exchange_contract
+        exchange_contract_name
+        exchange_contract_version
+      }
+    }
+    active_sell {
+      id
+    }
+    active_buy {
+      id
+    }
+  }
+}

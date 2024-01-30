@@ -1,0 +1,62 @@
+.switchWrapper {
+  display: flex;
+  align-items: center;
+  width: 4rem;
+}
+
+.switchEnable {
+  background: var(--background-color-3) !important;
+}
+.switchDisable {
+  background: var(--primary-color) !important;
+}
+
+.switchButton {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  width: 4rem;
+  height: 2rem;
+  padding: 0 !important;
+  border-radius: 2.5rem;
+  transform: 0 !important;
+  transition: all 0.5s;
+  align-items: center;
+  justify-content: center;
+}
+
+.switchDisc {
+  display: inline-block;
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  background: white;
+  transition: all 0.5s;
+  position: relative;
+  left: 0;
+  top: -0.3rem;
+  vertical-align: middle;
+}
+
+.switchDiscEnable {
+  transform: translateX(0.75rem);
+}
+
+.switchDiscDisable {
+  transform: translateX(2rem);
+}
+
+/* 
+            Subtitle
+*/
+
+.subtitleInfo svg {
+  margin-left: 0.5rem;
+  margin-top: -0.25rem;
+  color: var(--text-color);
+  cursor: pointer;
+}
+.switchButton {
+  border: none;
+  box-shadow: none;
+}

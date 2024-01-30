@@ -1,0 +1,105 @@
+.disclosure {
+  margin: 2rem 0;
+  border: 1px solid var(--border-4);
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.panelButton {
+  width: 100%;
+  padding: 2.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 0;
+  background: transparent;
+  font-weight: 500;
+  color: var(--text-color);
+  text-transform: capitalize;
+}
+
+.panelButtonNonTab {
+  text-transform: none;
+  color: var(--text-color-7);
+}
+
+.panelBody {
+  padding: 2rem;
+  background: var(--primary-light);
+  font-size: 1.5rem;
+  border-top: 1px solid var(--border-4);
+  overflow: auto;
+}
+
+.price {
+  font-weight: 600;
+  font-size: 3rem;
+
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.price span {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--text-color-7);
+  margin-bottom: -0.5rem;
+}
+
+.blockchainLogo {
+  width: 2rem;
+}
+
+.auctionArrow {
+  cursor: pointer;
+  font-size: 2.5rem;
+  margin-top: -1rem;
+}
+
+.btnsPrice {
+  display: flex;
+  gap: 1.5rem;
+  flex-flow: row wrap;
+}
+
+.buyBtn,
+.saleBtn {
+  padding: 1.5rem 2.5rem;
+  font-weight: 500;
+  font-size: 1.8rem;
+}
+
+.buyBtn,
+.myBuyBtn {
+  min-width: 22.5rem;
+}
+
+.buyBtn:disabled,
+.saleBtn:disabled,
+.placeBid:disabled {
+  cursor: not-allowed;
+  opacity: 0.75;
+}
+
+.buyBtn:disabled span.LoadingCircles_ldsEllipsis__FLCtE span {
+  background: var(--text-color-4);
+}
+
+.saleBtn {
+  background: transparent;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 1rem;
+}
+
+@media (max-width: 600px) {
+  .panelButton {
+    padding: 1rem 2rem;
+  }
+
+  .buyBtn,
+  .saleBtn {
+    width: 100%;
+  }
+}

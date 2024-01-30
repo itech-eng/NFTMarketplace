@@ -1,0 +1,28 @@
+.tokenLogo {
+  /* margin-top: 0.2rem !important; */
+  /* height: 1rem !important; */
+  margin-right: 5px;
+}
+
+.cancelButton {
+  margin-left: 0.25rem;
+  padding: 0.25rem 0.75rem;
+  background: var(--primary-color);
+  color: var(--text-color-3);
+  border: 1px solid var(--primary-color);
+  border-radius: 1.5rem;
+  transition: all 0.4s;
+}
+.itemAlign {
+  display: flex;
+  align-items: center;
+}
+.cancelButton:disabled {
+  cursor: not-allowed;
+  background: var(--background-color-4);
+}
+
+.tableBody td {
+  padding: 0.75rem 0.5rem;
+  border-top: 1px solid var(--border-4);
+}

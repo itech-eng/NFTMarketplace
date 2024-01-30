@@ -1,0 +1,26 @@
+mutation createBuyOffer(
+  $amount: Float!
+  $end_date: String!
+  $item_id: Int!
+  $nonce: String!
+  $payment_token_id: Int!
+  $signature: String!
+  $start_date: String!
+  $type: Int!
+) {
+  createBuyOffer(
+    data: {
+      amount: $amount
+      end_date: $end_date
+      item_id: $item_id
+      nonce: $nonce
+      payment_token_id: $payment_token_id
+      signature: $signature
+      start_date: $start_date
+      type: $type
+    }
+  ) {
+    id
+    status
+  }
+}

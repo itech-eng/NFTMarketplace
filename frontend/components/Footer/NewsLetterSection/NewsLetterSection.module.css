@@ -1,0 +1,92 @@
+.singleWidget {
+  margin-bottom: 3rem;
+}
+
+.brandLogo {
+  display: inline-block;
+  margin-bottom: 5rem;
+}
+.brandLogo img {
+  max-width: 150px;
+  filter: var(--logo-filter);
+}
+
+.newsletterTitle {
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--text-color);
+}
+.newsletterFormGroup {
+  position: relative;
+}
+.formControl {
+  width: 100%;
+  height: 4rem;
+  border-radius: 12px;
+  padding: 0.5rem 6rem 0.5rem 1.5rem;
+  font-size: 14px;
+  background: transparent;
+  border: 1px solid var(--primary-color);
+  color: var(--text-color);
+}
+.newsletterBtn {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 5rem;
+  height: 4rem;
+  border: none;
+  background: var(--primary-color);
+  color: var(--white);
+  border-radius: 12px;
+  text-align: center;
+  transition: all 0.5s linear;
+}
+.newsletterBtn:hover {
+  color: var(--text-color-3);
+  background: var(--hover-color);
+}
+
+.socialArea {
+  margin: 0;
+  padding: 0;
+}
+.socialArea li {
+  display: inline-block;
+  list-style: none;
+  margin-right: 0.6rem;
+}
+.socialArea li:last-child {
+  margin-right: 0;
+}
+.socialArea li a {
+  display: inline-block;
+  width: 5rem;
+  height: 5rem;
+  line-height: 5rem;
+  border-radius: 50%;
+  border: 2px solid rgba(133, 133, 255, 0.5);
+  text-align: center;
+  color: var(--text-color);
+  transition: all 0.5s linear;
+}
+.socialArea li a:hover {
+  color: var(--text-color-3);
+  background: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+@media (max-width: 1199px) {
+  .socialArea li a {
+    display: inline-block;
+    width: 4rem;
+    height: 4rem;
+    line-height: 4rem;
+  }
+
+  .newsletterTitle {
+    font-size: 1.6rem;
+  }
+}

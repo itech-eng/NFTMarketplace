@@ -1,0 +1,104 @@
+.InputItem {
+  padding: 1rem;
+  border-bottom: 1px solid var(--border-3);
+}
+
+.InputItemCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.InputItemCardContent {
+  display: flex;
+}
+
+.InputItemCardIcon {
+  margin-right: 1.75rem;
+  font-size: 2.75rem;
+  color: var(--text-color);
+}
+
+.InputItemCardTitle {
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.InputItemCardSubTitle {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--text-color-6);
+}
+
+.addBtn {
+  margin-left: 0.5rem;
+  width: 5rem;
+  height: 5rem;
+  display: grid;
+  place-items: center;
+  font-size: 3rem;
+  background: transparent;
+  color: var(--p4);
+  border: 1px solid var(--p4);
+  border-radius: 1rem;
+  box-shadow: none;
+  transition: all 0.4s;
+}
+.addBtn:hover {
+  background: var(--background-color);
+  box-shadow: 6px 6px 35px rgb(166 166 166 / 25%);
+}
+
+@media (max-width: 575px) {
+  .InputItemCardSubTitle {
+    font-size: 1.4rem;
+    line-height: 1.3;
+  }
+}
+
+/* 
+    Switch
+*/
+
+.switchWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.switchEnable {
+  background: var(--background-color-4) !important;
+}
+.switchDisable {
+  background: var(--primary-color) !important;
+}
+
+.switchButton {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  width: 6rem;
+  height: 2.5rem;
+  padding: 0 !important;
+  border: 0;
+  border-radius: 2.5rem;
+  transform: 0 !important;
+  transition: all 0.5s;
+}
+
+.switchDisc {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background: white;
+  transition: all 0.5s;
+}
+
+.switchDiscEnable {
+  transform: translateX(0.75rem);
+}
+
+.switchDiscDisable {
+  transform: translateX(3.75rem);
+}

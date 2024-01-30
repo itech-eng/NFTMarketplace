@@ -1,0 +1,30 @@
+.socialLinksWrapper {
+  margin: 2rem auto;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.socialLinksWrapper .link {
+  padding: 1rem 1.5rem;
+  border: 1px solid var(--border-3);
+  border-radius: 0.8rem;
+  background: transparent;
+  color: var(--text-color-7);
+  display: inline-block;
+}
+
+.title {
+  font-size: 1.4rem;
+  color: var(--text-color-7);
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 0;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border-4);
+}
+
+.socialLinksWrapper a {
+  color: inherit;
+}

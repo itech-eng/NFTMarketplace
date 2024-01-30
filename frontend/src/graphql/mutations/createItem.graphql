@@ -1,0 +1,28 @@
+mutation createItem(
+  $collection_id: Int!
+  $description: String
+  $external_url: String
+  $is_unlockable_content: Int!
+  $media_file: Upload!
+  $thumbnail_file: Upload
+  $name: String!
+  $unlockable_content: String
+) {
+  createItem(
+    data: {
+      collection_id: $collection_id
+      description: $description
+      external_url: $external_url
+      is_unlockable_content: $is_unlockable_content
+      media_file: $media_file
+      thumbnail_file: $thumbnail_file
+      name: $name
+      unlockable_content: $unlockable_content
+    }
+  ) {
+    id
+    name
+    slug
+    token_id
+  }
+}

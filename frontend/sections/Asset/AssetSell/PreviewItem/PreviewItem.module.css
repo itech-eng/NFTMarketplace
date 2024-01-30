@@ -1,0 +1,106 @@
+.wrapper h2 {
+  margin: 2rem 0;
+  font-weight: 500;
+  color: var(--text-color-6);
+}
+
+.card {
+  border: 1px solid var(--border-4);
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+
+.cardImageContainer {
+  text-align: center;
+  height: 25rem;
+  display: grid;
+  place-items: center;
+}
+
+.cardImage {
+  max-width: 100% !important;
+  max-height: 25rem !important;
+  object-fit: cover;
+}
+
+.details {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.collectionName,
+.priceTitle {
+  font-size: 1.4rem;
+  color: var(--text-color-7);
+  font-weight: 500;
+}
+
+.itemName {
+  display: block;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: var(--text-color-6);
+  line-height: 1.2;
+}
+
+.price {
+  display: flex;
+  flex-direction: column;
+}
+
+.priceAmount {
+  margin-left: 0.5rem;
+  font-size: 1.5rem;
+  color: var(--text-color-6);
+}
+
+.iconAndTooltip {
+  background: var(--background-color-4);
+  padding: 1rem 2rem;
+}
+
+/* 
+              NOT IN USE
+*/
+
+.bundleSection {
+  margin-top: 4rem;
+}
+
+.bundleSection > p {
+  font-weight: 500;
+}
+
+.bundleItem,
+.inputWrapper div {
+  border: 1px solid rgb(229, 232, 235);
+}
+
+.inputWrapper div {
+  padding: 0.5rem;
+}
+
+.bundleItem {
+  display: flex;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.bundleItem a {
+  font-size: 1.5rem;
+  color: inherit;
+}
+
+.bundleItem p {
+  font-weight: 500;
+  color: var(--text-color-5);
+  font-size: 1.5rem;
+}
+
+.bundleItem img {
+  height: 3.8rem;
+  margin-top: 1rem;
+  width: 6rem;
+  margin-right: 1rem;
+}

@@ -1,0 +1,68 @@
+.imgWrapper {
+  text-align: center;
+}
+
+.imgWrapper img {
+  max-width: 10rem;
+  max-height: 8rem;
+  object-fit: contain;
+}
+
+.infoWrapper {
+  max-width: 37rem;
+  margin: 3rem auto;
+  border-radius: 1.5rem;
+}
+
+.labelWrapper,
+.valueWrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem !important;
+  background: var(--background-color-4);
+  border: 1px solid var(--border-3);
+}
+
+.labelWrapper {
+  flex: 1;
+}
+
+.valueWrapper {
+  flex: 2;
+}
+
+.successIcon {
+  font-size: 2.25rem;
+}
+
+.text {
+  margin-bottom: 0;
+  color: var(--text-color-6);
+  font-size: 1.6rem;
+}
+
+.subTitle {
+  font-size: 1.6rem;
+  color: var(--text-color-7);
+  text-align: center;
+}
+
+.labelText {
+  margin-bottom: 0;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.socialLinksWrapper {
+  text-align: center;
+}
+
+@media (max-width: 575px) {
+  .text {
+    font-size: 1.5rem;
+  }
+
+  .infoWrapper {
+    margin-bottom: 1rem;
+  }
+}

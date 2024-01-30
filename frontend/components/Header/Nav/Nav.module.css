@@ -1,0 +1,84 @@
+/* 
+        Nav for the mobile version
+*/
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 80vh;
+  padding: 2rem;
+  padding-right: 2.5rem;
+}
+
+.link {
+  color: var(--text-color-6);
+}
+
+.activeLink {
+  color: var(--primary-color);
+}
+
+.mobileMenu span {
+  padding: 0;
+  margin: 0;
+}
+
+.disclosureButton {
+  width: 100%;
+  background: transparent;
+  border: 0;
+  color: var(--text-color-3);
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.6rem;
+  padding: 0;
+}
+
+.btnOpen {
+  color: var(--primary-color);
+}
+
+.btnClose {
+  color: var(--text-color-6);
+}
+
+.disclosurePanel {
+  font-size: 1.6rem;
+  padding-left: 24px;
+}
+
+.mobileMenu li {
+  padding: 0.25rem 0;
+  font-size: 1.6rem;
+}
+.socialArea {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.socialArea li {
+  width: 4rem;
+  height: 4rem;
+}
+
+.socialArea li a {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--border-4);
+  border-radius: 25rem;
+  color: var(--primary-color);
+  transition: all 0.4s;
+}
+
+.socialArea li a:hover {
+  background: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  color: var(--text-color-3);
+}

@@ -1,0 +1,17 @@
+.imgWrapper{
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.imgWrapper img{
+  max-width: 10rem;
+  max-height: 8rem;
+  object-fit: contain;
+}
+
+.viewButton{
+  border: none;
+  background: none;
+  background-color: var(--primary-color);
+
+}

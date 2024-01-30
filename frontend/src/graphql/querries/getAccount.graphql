@@ -1,0 +1,25 @@
+query getAccount($address_or_username: String!) {
+  getAccount(address_or_username: $address_or_username) {
+    banner_img
+    bio
+    created_at
+    email
+    id
+    name
+    phone
+    profile_img
+    status
+    updated_at
+    username
+    is_email_verified
+    wallet_address
+    social_links {
+      instagram_link
+      website_link
+      discord_link
+      facebook_link
+      linkedin_link
+      medium_link
+    }
+  }
+}

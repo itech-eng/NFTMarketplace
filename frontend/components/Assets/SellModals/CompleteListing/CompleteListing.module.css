@@ -1,0 +1,118 @@
+.infoWrapper {
+  border-bottom: 1px solid var(--border-3);
+}
+
+.info {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+
+.infoBoxContainer {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.itemImage {
+  width: 10rem;
+  height: 7rem !important;
+  object-fit: contain;
+  border: 1px solid var(--border-4);
+  border-radius: 1.5rem;
+}
+
+.infoBox {
+  display: flex;
+  gap: 0.25rem;
+  flex-direction: column;
+  font-weight: 500;
+}
+
+.label {
+  font-size: 1.3rem;
+  color: var(--text-color-7);
+  line-height: 1.4;
+}
+
+.labelBold {
+  font-size: 1.6rem;
+  color: var(--text-color-6);
+  font-weight: 600;
+  line-height: 1.4;
+
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.showInfo {
+  padding: 0;
+  line-height: 1;
+  background: transparent;
+  border: 0;
+}
+
+.scheduled {
+  width: 95%;
+  margin: 1rem auto;
+  padding: 2rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+
+  border-bottom: 1px solid var(--border-4);
+  border-top: 1px solid var(--border-4);
+}
+
+.scheduled h3 {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: var(--text-color-7);
+}
+
+.btn {
+  display: inline-block;
+  text-align: left;
+}
+
+.btnText {
+  margin-left: 1rem;
+}
+
+.icon {
+  font-size: 2.75rem;
+}
+
+@media (max-width: 767px) {
+  .info {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 1rem;
+  }
+
+  .infoBox {
+    padding-left: 0.75rem;
+  }
+
+  .scheduled {
+    width: 100%;
+    padding: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 575px) {
+  .btnText {
+    margin-top: 0.25rem;
+    margin-left: 0;
+    font-size: 1.6rem;
+    display: block;
+    text-align: left;
+  }
+}

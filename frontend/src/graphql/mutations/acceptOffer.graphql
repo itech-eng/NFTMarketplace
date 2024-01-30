@@ -1,0 +1,18 @@
+mutation acceptOffer($offerId: Int!){
+  acceptOffer(offerId: $offerId){
+    id
+    uid
+    item{
+      id
+      token_id
+      token_uri
+    }
+    payment_token{
+      id
+      name
+      contract_address
+      token_symbol
+      total_decimal
+    }
+  }
+}

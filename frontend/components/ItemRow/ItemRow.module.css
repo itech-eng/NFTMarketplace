@@ -1,0 +1,82 @@
+.row {
+  font-size: 1.6rem;
+  background: transparent;
+  box-shadow: none;
+  transition: all 0.4s;
+}
+
+.row:hover {
+  background: var(--primary-light);
+  box-shadow: 6px 6px 35px rgb(166 166 166 / 25%);
+}
+
+.row td {
+  padding: 1.5rem 0.5rem;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  justify-content: flex-start;
+}
+
+.itemImage {
+  width: 6.5rem;
+  height: 5rem;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+}
+.itemSellImage {
+  object-fit: contain;
+  /* width: 55rem !important; */
+  border: 1px solid var(--border-4) !important;
+  border-radius: 1.8rem !important;
+}
+.collectionName {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1;
+  color: var(--text-color-7) !important;
+}
+
+.itemName {
+  font-size: 1.7rem;
+  font-weight: 500;
+  line-height: 1;
+  color: var(--text-color-6) !important;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 200px;
+}
+
+.username {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--p1) !important;
+  transition: all 0.4s;
+}
+
+.username:hover {
+  color: var(--primary-color) !important;
+}
+
+.time {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.time svg {
+  font-size: 2.25rem;
+  line-height: 1;
+  margin-bottom: 0.35rem;
+}

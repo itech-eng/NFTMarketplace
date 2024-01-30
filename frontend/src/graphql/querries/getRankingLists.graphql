@@ -1,0 +1,28 @@
+query getRankingList($blockchain_id: Int, $days: Int!, $limit: Int) {
+  getRankingList(blockchain_id: $blockchain_id, days: $days, limit: $limit) {
+    id
+    one_day_volume_in_native
+    one_day_volume_in_usd
+    one_day_volume_percent
+    seven_days_volume_in_native
+    seven_days_volume_in_usd
+    seven_days_volume_percent
+    thirty_days_volume_in_native
+    thirty_days_volume_in_usd
+    thirty_days_volume_percent
+    floor_price_in_native
+    floor_price_in_usd
+    native_token {
+      id
+      logo
+      name
+      token_symbol
+    }
+    collection {
+      id
+      slug
+      name
+      logo
+    }
+  }
+}

@@ -1,0 +1,28 @@
+query getAccountListsPaginateForSearch(
+  $first: Int
+  $query: String
+  $totalItem: Int
+  $withItem: Boolean
+) {
+  getAccountListsPaginate(
+    first: $first
+    query: $query
+    totalItem: $totalItem
+    withItem: $withItem
+  ) {
+    totalCount
+    edges {
+      node {
+        id
+        username
+        profile_img
+        wallet_address
+        ownedItems {
+          id
+          name
+          thumbnail_path
+        }
+      }
+    }
+  }
+}

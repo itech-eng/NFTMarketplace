@@ -1,0 +1,7 @@
+mutation cancelExchange($exchangeId: Int!){
+  cancelExchange(exchangeId: $exchangeId){
+    success
+    code
+    message
+  }
+}

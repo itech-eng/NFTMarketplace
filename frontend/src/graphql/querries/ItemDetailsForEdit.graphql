@@ -1,0 +1,28 @@
+query ItemDetailsForEdit($slugOrTokenId: String!) {
+  ItemDetailsBySlugOrTokenId(slugOrTokenId: $slugOrTokenId) {
+    id
+    media_path
+    thumbnail_path
+    name
+    external_url
+    description
+    is_unlockable_content
+    unlockable_content
+    collection {
+      id
+      logo
+      name
+      blockchain {
+        id
+        status
+      }
+    }
+    owner {
+      id
+      wallet_address
+    }
+    active_sell {
+      id
+    }
+  }
+}

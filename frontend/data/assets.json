@@ -1,0 +1,46 @@
+{
+  "id": "5456",
+  "auctionEndAt": "2019-05-31T00:00:00.000Z",
+  "price": "1.00",
+  "name": "ITem test",
+  "likes": 7,
+  "image": "https://i.ebayimg.com/images/g/QQIAAOSwXV5ZzZzg/s-l300.jpg",
+  "collection": {
+    "contractAddress": "0x0415465564646",
+    "name": "test collection"
+  },
+  "currentOwner": {
+    "id": "5456",
+    "name": "John Doe",
+    "avatar": "https://randomuser.me/api/portraits/",
+    "walletAddress": "0xF330D55Cb6cA9bf1C6001EFAECFC6a576D8D34fC"
+  },
+  "creator": {
+    "id": "5456",
+    "name": "John Doe",
+    "avatar": "https://randomuser.me/api/portraits/",
+    "walletAddress": "0xF330D55Cb6cA9bf1C6001EFAECFC6a576D8D34fC"
+  },
+
+  "histories": [
+    {
+      "id": "5456",
+      "type": "bid",
+      "amount": "1.00",
+      "hash": "0xF330D55Cb6cA9bf1C6001EFAECFC6a576D8D34fC",
+      "createdAt": "2019-05-31T00:00:00.000Z",
+      "from": {
+        "id": "5456",
+        "name": "John Doe",
+        "avatar": "https://randomuser.me/api/portraits/",
+        "walletAddress": "0xF330D55Cb6cA9bf1C6001EFAECFC6a576D8D34fC"
+      },
+      "to": {
+        "id": "5456",
+        "name": "John Doe",
+        "avatar": "https://randomuser.me/api/portraits/",
+        "walletAddress": "0xF330D55Cb6cA9bf1C6001EFAECFC6a576D8D34fC"
+      }
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+mutation createCollection(
+  $name: String!
+  $slug: String
+  $description: String
+  $logo_file: Upload!
+  $feature_image_file: Upload
+  $banner_image_file: Upload
+  $category_id: Int!
+  $blockchain_id: Int!
+  $display_theme: Int!
+  $payment_tokens: String
+  $is_sensitive: Int!
+  $website_link: String
+  $discord_link: String
+  $instagram_link: String
+  $medium_link: String
+  $royalties: Float!
+  $payout_address: String
+) {
+  createCollection(
+    data: {
+      name: $name
+      slug: $slug
+      description: $description
+      logo_file: $logo_file
+      feature_image_file: $feature_image_file
+      banner_image_file: $banner_image_file
+      category_id: $category_id
+      blockchain_id: $blockchain_id
+      display_theme: $display_theme
+      payment_tokens: $payment_tokens
+      is_sensitive: $is_sensitive
+      discord_link: $discord_link
+      website_link: $website_link
+      instagram_link: $instagram_link
+      medium_link: $medium_link
+      royalties: $royalties
+      payout_address: $payout_address
+    }
+  ) {
+    id
+    name
+  }
+}
